@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FormProfile</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/register.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/profile.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+     <header class="row">
+          <div class="container">
+            <img class="top-logo" src="../assets/images/logo-top.png"><a class="txt-logo"><b id="paws">PAWS</b><b id="home">HOME</b></a>
+          </div>
+    </header>
+
+<main>
+        <section class="row container-fluid text-center" >    
+          <div class="col-lg-12 text-center">    
+            <img class="img-responsive" src="../assets/images/backgroundImage.png">
+          <div class="profile-info">
+            <img class="profile-pic" src="../assets/images/userProfile.png">
+            <h2 class="userName">Contribuidor<br><h4>Registro</h4></h2>
+          </div>
+          </div>
+        </section>
+
+    <!--Formulario Registro-->
+    <form>
+  <div class="form-row">
+    <!-- Nmbr -->
+    <div class="col-md-4 mb-3">
+      <label for="validationServer01 form">Nombre</label>
+      <input type="text" class="form-control is-valid" id="validationName" placeholder="name" value="Nombre Completo" required>
+    </div>
+    <!-- Correo -->
+   <div class="col-md-4 mb-3">
+      <label for="validationServer02">Correo</label>
+      <input type="text" class="form-control is-valid" id="validationEmail" placeholder="email" value="example@appet.com" required>
+    </div>
+    <!-- NickName -->
+    <div class="col-md-4 mb-3">
+      <label for="validationServerUsername">Nombre de Usuario</label>
+      <div class="input-group">
+        <input type="text" class="form-control is-invalid" id="validationUsername" placeholder="NickName" aria-describedby="inputGroupPrepend3" required>
+      </div>
+    </div>
+  </div>
+    <!-- Ciudad -->
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Ciudad</label>
+      <input type="text" class="form-control is-invalid" id="validationCity" placeholder="México" required>
+    </div>
+    <!-- Estado -->
+    <div class="col-md-3 mb-3">
+      <label for="validationServer04">Estado</label>
+      <input type="text" class="form-control is-invalid" id="validationState" placeholder="México" required>
+    </div>
+    <!-- CP -->
+    <div class="col-md-3 mb-3">
+      <label for="validationServer05">Código Postal</label>
+      <input type="text" class="form-control is-invalid" id="validationCp" placeholder="00000" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Acepto Términos y <br>Condiciones de Uso y Privaciadad  
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary submit" type="submit">Resgistrar</button>
+</form>
+  </div> <!--end Formulario-->
+</main>
+      
+
+  <script type="text/javascript" src="../js/users.js"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+  <script type="text/javascript" src="../js/splash.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGy0rwzqbnCbFVAH7s0XuOccWPkOS7jm0&callback=myMap" type="text/javascript"></script>
+    </body>
+    </html>

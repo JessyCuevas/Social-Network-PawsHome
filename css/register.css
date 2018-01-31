@@ -1,0 +1,18 @@
+*{
+	background: ;
+	margin: 0px;
+}
+
+
+
+.check{
+	margin: 10px 15px;
+}
+
+.submit{
+	margin-left: 15px;
+	color: #fff;
+    background-color: #00cef4;
+    border-color: #grey;
+    border: 0px;
+}

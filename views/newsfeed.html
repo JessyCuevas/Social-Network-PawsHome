@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pet App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+<body>
+<!--Mobile first-->
+	<div class="container-fluid">
+		<!--User header-->
+		<!--<div class="fast-menu col-xs-12">-->
+		<header class="row">
+      		<div class="container">
+       			<img class="top-logo" src="../assets/images/logo-top.png"><a class="txt-logo"><b id="paws">PAWS</b><b id="home">HOME</b></a>
+      		</div>
+		</header>
+
+
+		<!--Post section-->
+		<div id="home"></div>
+		<section class="row">
+			<div id="post" class="col-xs-12">
+				<a href="./userProfile.html"><div class="col-xs-2 col-xs-offset-1 user">
+				<img class="responsive-img" src="">
+				<p class="col-xs-9 index-l">Inicio</p></div>
+			</a>
+
+
+			
+				<form class="ml-5">
+  				<div class="form-group">
+    				<input type="text-area" class="form-control" id="input" placeholder="Compartir el dia de hoy">
+  				</div>
+  				<section class="row">
+	  				<div class="form-group col-xs-offset-1 col-xs-5">
+					  	<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+					  	<progress value="0" max="100" id="uploader">%0</progress>
+					    <input id="file" type="file" accept="image/gif, image/jpeg, image/png" value="upload">
+	  				</div>
+	  				<button id="share" type="submit" class="btn btn-default col-xs-offset-1 col-xs-4">Compartir</button>
+  				</section>
+				</form>
+			</div>
+		</section>
+
+		<!--Actividad section-->
+		<nav class="navbar navbar-fixed-bottom">
+  			<div class="container-fluid">
+    			<ul class="nav navbar-nav">
+     				<li<a href="#home"><li class="glyphicon glyphicon-home col-xs-offset-1  col-xs-2 " aria-hidden="true"></li></a>
+      				<li class="glyphicon glyphicon-search col-xs-2" aria-hidden="true"></li>
+      				<li class="fa fa-paw col-xs-2" aria-hidden="true"></li>
+      				<li class="glyphicon glyphicon-envelope col-xs-2" aria-hidden="true"></li>
+    			</ul>
+  			</div>
+		</nav>
+
+		<!--Newsfeed-->
+		<section class="row">
+			<!--posts will be added dinamically-->
+			<div id="posts_container">
+			</div>
+		</section>
+
+	</div> <!--end of container-->
+
+	<!--scripts-->
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
+	<script type="text/javascript" src="../js/users.js"></script>
+	<script type="text/javascript" src="../js/app.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

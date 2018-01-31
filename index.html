@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pet App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+<body>
+<!--Mobile first-->
+	<div class="container-fluid">
+		<!--splash-->
+		<section class="row">
+			<article id="splash" class="col-xs-12">
+				<p class="logo text-center"><img class="img-responsive height" src="./assets/images/logo.png"></p>
+				<p class="text-center"><b id="inde" >UN SEGUNDO HOGAR</b></p>
+			</article>
+		</section>
+
+		<!--User header-->
+			<article id="splash " class="col-xs-12">
+				<p class="logo"><img class="img-responsive height" src="./assets/images/logo.png"></p>
+				<p class="text-center"><b id="inde" >UN SEGUNDO HOGAR</b></p>
+			</article>
+    <!--LogIn / SingUp -->
+    <div class="backColor log-in row">
+      <section class=" row">
+        <div class="col-xs-offset-2 col-xs-8 input-group input-group-sm">
+          <span class="input-group-addon" id="sizing-addon3">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+        </div>
+      </section>
+      <section class="mt-5 row">
+        <div class="col-xs-offset-2 col-xs-8 input-group input-group-sm">
+          <span class="input-group-addon" id="sizing-addon3"><i class="fa fa-key" aria-hidden="true"></i></span>
+          <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+        </div>
+      </section>
+      <div class="mt-5 row">
+          <button id="auth" class="col-xs-offset-2 col-xs-8 text-center"><i class="fa fa-google" aria-hidden="true"></i> Iniciar Sesion con Google</button>
+          <a href="./views/newsfeed.html"><button class="col-xs-offset-2 col-xs-8 text-center">GO!</button></a>
+      </div>
+    </div>
+	</div> <!--end of container-->
+
+	<!--scripts-->
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+ 	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+  	<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-firestore.js"></script>
+	<script type="text/javascript" src="js/users.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/splash.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

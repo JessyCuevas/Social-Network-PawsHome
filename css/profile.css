@@ -1,0 +1,49 @@
+*{
+	background: ;
+	margin: 0px;
+}
+
+.log-user{
+	margin-top: 2em;
+}
+
+
+
+.logo {
+	width: 50vh;
+	height: auto;
+	margin-left: 7vh;
+	margin-top: 20vh;
+}
+
+.navbar-fixed-bottom{
+background-color: #F9F9F9;
+}
+
+
+/*User-Profile*/
+.profile-card {
+	background-color: #222222;}
+
+ .profile-pic {
+  	border-radius: 50%;
+  	position: absolute;
+  	top: 6em;
+  	left: 0;
+  	right: 0;
+  	margin: auto;
+  	z-index: 1;
+  	max-width: 150px;
+  }
+
+#file{
+  width: 200px;
+  font-size: 15px;
+  color: #fff;
+  border-color: #grey;
+  border: 0px;
+}
+
+
+
+
